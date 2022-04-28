@@ -1,0 +1,655 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.85849484034646, -33.05116196175047]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-06-01",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.1"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.85426155001654, -33.05559889165323]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-06-02",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.2"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.85003722450767, -33.05997242187277]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-06-03",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.3"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.83881322363916, -33.06563065545876]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-06-04",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.4"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.83459873468883, -33.07002157258236]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-06-05",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.5"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.83039397858249, -33.0743851546286]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-06-06",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.6"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.82617828809658, -33.07875777887145]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-06-07",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.7"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.82197345107443, -33.0831571625265]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-06-08",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.8"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.86823685237878, -33.06116202371795]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-06-09",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.9"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.86400361369228, -33.06559927739818]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-04-01",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.10"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.85977914363432, -33.06996411551388]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-04-02",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.11"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.84604972333301, -33.07519140578472]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-04-03",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.12"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.84183517343238, -33.07958256462724]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-04-04",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.13"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.837630354904, -33.08394638791214]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-04-05",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.14"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.83341460152015, -33.08831925403457]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-04-06",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.15"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.82922041553434, -33.09271872157794]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-04-07",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.16"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.85577075413698, -33.0815763432289]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-17-01",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.17"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.8515562259166, -33.08595880481852]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-17-02",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.18"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.84735180456941, -33.09033196129735]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-17-03",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.19"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.84351885268806, -33.09506923876729]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-17-04",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.20"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.83893157520195, -33.09910508829722]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-17-05",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.21"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.89569716553996, -33.08713496057958]
+      },
+      "properties": {
+        "nome": "Turbina - MIR-08-01",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.22"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.89147372578692, -33.09151887040866]
+      },
+      "properties": {
+        "nome": "Turbina - MIR-08-02",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.23"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.88726077357848, -33.09591150228459]
+      },
+      "properties": {
+        "nome": "Turbina - MIR-08-03",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.24"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.87834970835711, -33.09907627657901]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-12-01",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.25"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.87054515337556, -33.10746343483953]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-12-02",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.26"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.86634073341787, -33.11183722089594]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-12-03",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.27"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.86213647108186, -33.11623792311591]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-12-04",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.28"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.8582734943604, -33.12057928866818]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-12-05",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.29"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.90212175897389, -33.15457426348078]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-15-01",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.30"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.89790650036381, -33.15896730268657]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-15-02",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.31"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.89370134982818, -33.16335103298713]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-15-03",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.32"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.91138760937145, -33.16359476342644]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-15-04",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.33"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.90718313931108, -33.16798794515352]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-15-05",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.34"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.90299443114046, -33.17213726047288]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-15-06",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.35"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.92735295792458, -33.16653198237007]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-11-02",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.36"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.92264820760232, -33.17057269405104]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-11-03",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.37"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.94825242362665, -33.18790397506184]
+      },
+      "properties": {
+        "nome": "Turbina - MIR-04-01",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.38"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.94402731562643, -33.19229869671133]
+      },
+      "properties": {
+        "nome": "Turbina - MIR-04-02",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.39"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.93881688840395, -33.19580683767016]
+      },
+      "properties": {
+        "nome": "Turbina - MIR-04-03",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.40"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.9358480831937, -33.20175986196966]
+      },
+      "properties": {
+        "nome": "Turbina - MIR-04-04",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.41"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.92975922056704, -33.20780634752259]
+      },
+      "properties": {
+        "nome": "Turbina - MIR-04-05",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.42"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.86192223154237, -33.09846608148283]
+      },
+      "properties": {
+        "nome": "Turbina - MIR-06-01",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.43"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.85691942593363, -33.10258093339792]
+      },
+      "properties": {
+        "nome": "Turbina - MIR-06-02",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.44"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.85213921581278, -33.10660209945491]
+      },
+      "properties": {
+        "nome": "Turbina - MIR-06-03",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.45"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.90437815343143, -33.11014334109876]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-13-01",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.46"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.90003522903441, -33.11846130050963]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-13-02",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.47"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.89581252915048, -33.12293553518942]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-13-03",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.48"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.89268432944886, -33.12798820671901]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-13-04",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.49"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-52.89151935409539, -33.13563529560929]
+      },
+      "properties": {
+        "nome": "Turbina - MAN-13-05",
+        "empresa": "Nordex",
+        "buffer": "0"
+      },
+      "id": "tb_nordex_mm_turbinas_aux.50"
+    }
+  ]
+}
