@@ -32,7 +32,6 @@ function Alvos(props) {
           let sourceData = { type: "FeatureCollection", features: [element] };
 
           if (state.hasOwnProperty(element.properties.nome.split(" - ")[0])) {
-
             arr.push(
               <Source
                 id={element.id}
@@ -42,6 +41,7 @@ function Alvos(props) {
               >
                 <Layer
                   id={element.id}
+                  key={element.id}
                   source={element.id}
                   type="line"
                   layout={{
@@ -98,7 +98,7 @@ function Alvos(props) {
       return (
         <>
           {layers.map((element) => {
-            return element;
+            return <div key={element.id}>{element}</div>;
           })}
         </>
       );

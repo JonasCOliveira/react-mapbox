@@ -1,0 +1,22 @@
+.header {
+  text-align: center;
+  background-color: blueviolet;
+  color: white;
+  width: 30vw;
+}
+
+
+.col-alvos {
+  margin: 0;
+  background-color: #fff;
+  /* height: auto;*/
+  max-height: 20vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.col-alvos .checkbox {
+  margin: 0;
+  text-align: left;
+  margin: 5px 0px;
+}

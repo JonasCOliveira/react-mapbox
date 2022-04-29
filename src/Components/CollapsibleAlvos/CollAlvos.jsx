@@ -8,6 +8,8 @@ import { initialState, reducer } from "../../store/config";
 
 import DataContext from "../../data/DataContext";
 
+import "./ColAlvos.css";
+
 export default function CollAlvos(props) {
   const [state, dispatch] = useReducer(reducer, initialState);
   const [loading, setLoading] = useState(true);
@@ -23,7 +25,6 @@ export default function CollAlvos(props) {
       const response = await axios.get(`http://localhost:3002/api/lista-alvos`);
 
       response.data.map((element) => {
-        let payload = { [element]: false };
         alvos[[element]] = false;
       });
 
@@ -37,6 +38,8 @@ export default function CollAlvos(props) {
       });
 
       setLoading(false);
+
+      console.log(context.alvosState);
     }
 
     fetchAlvos();
@@ -82,17 +85,19 @@ export default function CollAlvos(props) {
     if (loading) return <div>Carregando...</div>;
     else {
       return (
-        <div>
+        <ul className="col-alvos">
           {Object.entries(context.alvosState).map((element) => {
             return (
-              <Checkbox
-                key={element[0]}
-                label={element[0]}
-                checked={element[1]}
-              />
+              // <li>
+                <Checkbox className="checkbox"
+                  key={element[0]}
+                  label={element[0]}
+                  checked={element[1]}
+                />
+              // </li>
             );
           })}
-        </div>
+        </ul>
       );
     }
   }

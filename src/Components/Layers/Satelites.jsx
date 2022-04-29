@@ -23,7 +23,6 @@ export function Satelites(props) {
   const visibility = context.state.satelite;
 
   function getCoordinates() {
-    console.log("get coordinates");
     return new Promise((resolve, reject) => {
       axios
         .get("http://localhost:3002/api/radares", {
@@ -42,7 +41,6 @@ export function Satelites(props) {
   }
 
   function getImages() {
-    console.log("get images");
 
     return new Promise((resolve, reject) => {
       axios
@@ -63,7 +61,6 @@ export function Satelites(props) {
   }
 
   useEffect(() => {
-    console.log(props);
 
     Promise.all([getImages(), getCoordinates()]).then((response) => {
       setImagePath(response[0].data.data.satelite[0].path);
@@ -88,8 +85,8 @@ export function Satelites(props) {
         <Source
           id="radares"
           type="image"
-          // url={imagePath}
-          url={`https://docs.mapbox.com/mapbox-gl-js/assets/radar${props.imageIndex}.gif`}
+          // url={`https://docs.mapbox.com/mapbox-gl-js/assets/radar${props.imageIndex}.gif`}
+          url="http://localhost:3002/api/goes"
           coordinates={[
             // Formato correto
             [lonMin, latMax],

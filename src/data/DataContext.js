@@ -6,7 +6,9 @@ export const camadas = {
   satelite: false,
 };
 
-export const alvos = {};
+export const alvos = {
+  todos: false,
+};
 
 const DataContext = React.createContext(camadas, alvos);
 

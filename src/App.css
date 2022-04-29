@@ -1,27 +1,30 @@
+
 .control-panel {
   position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 320px;
-  /* background: #fff; */
-  background: transparent;
-  /* box-shadow: 0 2px 4px rgba(0,0,0,0.3); */
-  padding: 12px 24px;
-  margin: 20px;
+  top: 40%;
+  left: 0;
+  max-width: 45vw;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  /* padding: 12px 24px; */
+  margin: 10px;
   font-size: 13px;
   line-height: 2;
   color: #6b6b76;
   text-transform: uppercase;
   outline: none;
+  border-radius: 3px;
 }
 
 label {
   display: inline-block;
-  width: 150px;
+  margin: 0px 10px;
+  /* width: 150px; */
 }
 
 input {
   margin-left: 20px;
+  margin: 0px 5px;
 }
 
 .input.disabled {
@@ -58,12 +61,6 @@ a {
   color: #2dc4b2;
 }
 
-#console {
-  position: absolute;
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-}
 
 #filters {
   display: flex;
@@ -295,8 +292,6 @@ a {
 }
 
 .measure-distance .active {
-
-  
   background-color: #ccc;
 }
 
