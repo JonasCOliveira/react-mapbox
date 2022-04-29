@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-46.29402816798388, -23.97486335391034, 0],
+          [-46.30005145134448, -23.96754795132437, 0],
+          [-46.2992359966588, -23.96698053121499, 0],
+          [-46.2932341036011, -23.97429694806281, 0],
+          [-46.29402816798388, -23.97486335391034, 0]
+        ]
+      },
+      "properties": {
+        "nome": "Armazém de Celulose Bracell",
+        "empresa": "Obra Consórcio BRi9",
+        "buffer": "0"
+      },
+      "id": "tb_armazem_bracell.1"
+    }
+  ]
+}

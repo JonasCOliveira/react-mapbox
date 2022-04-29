@@ -8,17 +8,20 @@ var path = require("path");
 app.use(express.static(path.join(__dirname, "build")));
 app.use(allowCors.cors);
 
-var dataController = require("./controller");
+var alvosController = require("./controllerAlvos");
 var descargasController = require("./controllerDescargas");
 var radaresController = require("./controllerREDEMET");
+var goesController = require("./controllerGOES");
 
 // URLs base
-app.get("/api/lista-alvos", dataController.listaAlvos);
-app.get("/api/alvos", dataController.getAlvos);
+app.get("/api/lista-alvos", alvosController.listaAlvos);
+app.get("/api/alvos", alvosController.getAlvos);
 
 app.get("/api/descargas", descargasController.getDescargas);
 
 app.get("/api/radares", radaresController.getRadares);
+
+app.get("/api/goes", goesController.getGOES);
 
 // Filtros
 // app.get("/api/alvo/:nome", dataController.getAlvo);

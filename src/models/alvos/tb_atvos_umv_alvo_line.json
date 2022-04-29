@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-53.0538,-17.7135,0],[-53.0302,-17.7137,0],[-53.0303,-17.7283,0],[-53.0541,-17.7283,0],[-53.0538,-17.7135,0]]},"properties":{"nome":"UMV - Unidade Morro Vermelho","empresa":"Atvos","buffer":"0"},"id":"tb_atvos_umv.1"}]}

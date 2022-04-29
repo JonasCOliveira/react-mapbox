@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-53.3093,-17.7283,0],[-53.3095,-17.7464,0],[-53.32,-17.7508,0],[-53.3197,-17.7283,0],[-53.3143,-17.7284,0],[-53.3093,-17.7283,0]]},"properties":{"nome":"UAT - Unidade Alto Taquari","empresa":"Atvos","buffer":"0"},"id":"tb_atvos_uat.1"}]}
