@@ -1,11 +1,8 @@
-import React, { useState, useEffect, useContext, useReducer } from "react";
-
-// import { initialState, reducer } from "../../store/config";
-
+import React, { useState, useContext } from "react";
 import DataContext from "../../data/DataContext";
 
 export function Checkbox(props) {
-  // const [state, dispatch] = useReducer(reducer, initialState);
+
   const [checked, setChecked] = useState(props.checked);
   const label = props.label;
   const context = useContext(DataContext);

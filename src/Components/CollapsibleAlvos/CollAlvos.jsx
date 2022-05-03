@@ -38,8 +38,6 @@ export default function CollAlvos(props) {
       });
 
       setLoading(false);
-
-      console.log(context.alvosState);
     }
 
     fetchAlvos();
@@ -88,13 +86,11 @@ export default function CollAlvos(props) {
         <ul className="col-alvos">
           {Object.entries(context.alvosState).map((element) => {
             return (
-              // <li>
                 <Checkbox className="checkbox"
                   key={element[0]}
                   label={element[0]}
                   checked={element[1]}
                 />
-              // </li>
             );
           })}
         </ul>

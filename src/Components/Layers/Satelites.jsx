@@ -9,28 +9,23 @@ export function Satelites(props) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
-  const [imagePath, setImagePath] = useState("");
+  // Array de imagens
+  const [imagePath, setImagePath] = useState([]);
 
+  // Utilizar apenas uma variável do tipo object
   const [latMax, setLatMax] = useState(null);
   const [latMin, setLatMin] = useState(null);
   const [lonMax, setLonMax] = useState(null);
   const [lonMin, setLonMin] = useState(null);
 
-  const [currentImage, setCurrentImage] = useState(0);
-  const frameCount = 5;
-
   const context = useContext(DataContext);
   const visibility = context.state.satelite;
 
+  // Esses valores podem ser fixos, independem de uma resposta de API
   function getCoordinates() {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       axios
-        .get("http://localhost:3002/api/radares", {
-          headers: {
-            // "Access-Control-Allow-Origin": "*",
-            // "content-type": "aplication/json",
-          },
-        })
+        .get("http://localhost:3002/api/radares")
         .then((response) => {
           resolve(response);
         })
@@ -40,18 +35,12 @@ export function Satelites(props) {
     });
   }
 
+  // Retorna o array com as URL's do bucket para as imagens
   function getImages() {
-
     return new Promise((resolve, reject) => {
       axios
-        .get("http://localhost:3002/api/radares", {
-          headers: {
-            // "Access-Control-Allow-Origin": "*",
-            // "content-type": "aplication/json",
-          },
-        })
+        .get("http://localhost:3002/api/goes")
         .then((response) => {
-          console.log(response);
           resolve(response);
         })
         .catch(() => {
@@ -61,9 +50,8 @@ export function Satelites(props) {
   }
 
   useEffect(() => {
-
     Promise.all([getImages(), getCoordinates()]).then((response) => {
-      setImagePath(response[0].data.data.satelite[0].path);
+      setImagePath(response[0].data);
 
       setLatMax(parseFloat(response[1].data.data.lat_lon.lat_max));
       setLatMin(parseFloat(response[1].data.data.lat_lon.lat_min));
@@ -73,8 +61,6 @@ export function Satelites(props) {
       setLoading(false);
       setError(false);
     });
-
-    console.log(latMin, latMax, lonMin, lonMax);
   }, [loading]);
 
   function renderSource() {
@@ -83,12 +69,13 @@ export function Satelites(props) {
     } else {
       return (
         <Source
-          id="radares"
+          id="satelite"
           type="image"
-          // url={`https://docs.mapbox.com/mapbox-gl-js/assets/radar${props.imageIndex}.gif`}
-          url="http://localhost:3002/api/goes"
+          // Substituir essa URL pela URL contida no array ImagePath
+          // junto com o indice vindo do componente pai (App.js)
+          url="https://goes-glm-images.s3.us-east-2.amazonaws.com/0220428190000.png"
           coordinates={[
-            // Formato correto
+            // Este é o formato correto, não alterar
             [lonMin, latMax],
             [lonMax, latMax],
             [lonMax, latMin],
@@ -96,8 +83,8 @@ export function Satelites(props) {
           ]}
         >
           <Layer
-            id="radar"
-            source={"radares"}
+            id="goes"
+            source={"satelite"}
             type="raster"
             paint={{
               "raster-fade-duration": 0,

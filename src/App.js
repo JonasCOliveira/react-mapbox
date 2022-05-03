@@ -20,17 +20,25 @@ import "mapbox-gl/dist/mapbox-gl.css";
 function App() {
   const mapRef = useRef();
 
+  // Controle do medidor de distância
   const [draw, setDraw] = useState(false);
-  const [popUpInfo, setPopupInfo] = useState(null);
 
+  // Controle do popup de informações dos alvos
+  const [popUpInfo, setPopupInfo] = useState({
+    latlng: null,
+    alvos: [],
+  });
+
+  // Controle de camadas e alvos
   const [layers, setLayers] = useState(camadas);
   const [companies, setCompanies] = useState(alvos);
 
+  // Controle da camada de Satelite
   const [opacidade, setOpacidade] = useState(100);
-
   const [play, setPlay] = useState(false);
   const [imageIndex, setImageIndex] = useState(1);
 
+  // Controle de estilo
   const [estilo, setEstilo] = useState("streets-v11");
 
   const [viewport, setViewport] = useState({
@@ -55,6 +63,7 @@ function App() {
     },
   };
 
+  // Funcionalidade para centralizar a camera na latitude e longitude especificada
   const onSelectAlvo = function (longitude, latitude) {
     mapRef.current?.flyTo({ center: [longitude, latitude], duration: 2000 });
   };
@@ -62,9 +71,8 @@ function App() {
   const distanceContainer = document.getElementById("distance");
 
   useEffect(() => {
+    // Altera a imagem a ser mostrada na camada de satelite em um intervalo de 1 segundo
     if (play) {
-      console.log("update imagem");
-
       const timer = setInterval(() => {
         if (imageIndex < 5) setImageIndex(imageIndex + 1);
         else setImageIndex(1);
@@ -192,15 +200,11 @@ function App() {
           }}
           onMove={(event) => {
             setViewport(event.target.viewport);
-
-            // setLatLng({ lat: event.lngLat.lat, lng: event.lngLat.lng });
-
             const features = mapRef.current.queryRenderedFeatures(event.point, {
               layers: ["measure-points"],
             });
 
-            // Change the cursor to a pointer when hovering over a point on the map.
-            // Otherwise cursor is a crosshair.
+            // Muda o estilo do cursor
             mapRef.current.getCanvas().style.cursor = features.length
               ? "pointer"
               : "crosshair";
@@ -247,8 +251,6 @@ function App() {
                 geojson.features.push(point);
               }
 
-              console.log(geojson);
-
               if (geojson.features.length > 1) {
                 linestring.geometry.coordinates = geojson.features.map(
                   (point) => point.geometry.coordinates
@@ -270,14 +272,30 @@ function App() {
                 interactiveLayers.push(element.id)
               );
 
+              // Area de captura de alvos
+              const area = [
+                [event.point.x - 50, event.point.y - 50],
+                [event.point.x + 50, event.point.y + 50],
+              ];
+
               const features = mapRef.current.queryRenderedFeatures(
-                event.point,
+                // Caso não queira definir uma área, utilizar event.point,
+                area,
                 {
                   layers: interactiveLayers,
                 }
               );
 
-              setPopupInfo({ ...features[0].properties, ...event.lngLat });
+              features.map((element) => {
+                if (element.properties.buffer == "0") {
+                  setPopupInfo({
+                    ...popUpInfo,
+                    alvos: [element.properties],
+                  });
+                }
+              });
+
+              setPopupInfo({ ...popUpInfo, latlng: event.lngLat });
             }
           }}
         >
@@ -316,15 +334,15 @@ function App() {
           <Descargas />
 
           <Satelites opacidade={opacidade} imageIndex={imageIndex} />
-          {/* <Radares /> */}
 
-          {popUpInfo && (
+          {popUpInfo.latlng && (
             <Popup
               anchor="top"
-              longitude={Number(popUpInfo.lng)}
-              latitude={Number(popUpInfo.lat)}
-              onClose={() => setPopupInfo(null)}
+              longitude={Number(popUpInfo.latlng.lng)}
+              latitude={Number(popUpInfo.latlng.lat)}
+              onClose={() => setPopupInfo({ latlng: null, alvos: [] })}
             >
+              {/* Utilizar um map para mostrar as informações de todos os alvos dentro da variável popupInfo */}
               <div>Informações</div>
             </Popup>
           )}
@@ -332,7 +350,7 @@ function App() {
           <ScaleControl />
         </Map>
 
-        <ControlPanel onSelect={onSelectAlvo} layers={layers} />
+        <ControlPanel layers={layers} />
       </div>
     </DataContext.Provider>
   );
