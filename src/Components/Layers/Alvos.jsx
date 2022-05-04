@@ -1,13 +1,12 @@
 import React, { useContext, useEffect, useState, useReducer } from "react";
 import axios from "axios";
 import { Source, Layer } from "react-map-gl";
-import { connect } from "react-redux";
 
 import { initialState, reducer } from "../../store/config";
 
 import DataContext from "../../data/DataContext";
 
-function Alvos(props) {
+export default function Alvos(props) {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const [loading, setLoading] = useState(true);
@@ -108,10 +107,3 @@ function Alvos(props) {
   return <>{renderAlvos()}</>;
 }
 
-function mapStateToProps(state) {
-  return {
-    state,
-  };
-}
-
-export default connect(mapStateToProps)(Alvos);

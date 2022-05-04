@@ -1,1 +1,0 @@
-export const ALTERAR_ALVOS = 'ALTERAR_ALVOS';

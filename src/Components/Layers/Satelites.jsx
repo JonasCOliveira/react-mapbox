@@ -37,7 +37,7 @@ export function Satelites(props) {
 
   // Retorna o array com as URL's do bucket para as imagens
   function getImages() {
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve) => {
       axios
         .get("http://localhost:3002/api/goes")
         .then((response) => {
